@@ -18,3 +18,33 @@ html,body{
 .z-index-max{
   z-index: 9999;
 }
+.z-index-2{
+  z-index: 2;
+}
+
+// 三角形
+.caret-red{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: pxToRem(8) solid $mainColor;
+  border-left: pxToRem(6) solid transparent;
+  border-right: pxToRem(6) solid transparent;
+}
+// 三角形
+.caret-gory{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: pxToRem(8) solid #000;
+  border-left: pxToRem(6) solid transparent;
+  border-right: pxToRem(6) solid transparent;
+}
+
+//遮罩层
+.cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.4);
+}

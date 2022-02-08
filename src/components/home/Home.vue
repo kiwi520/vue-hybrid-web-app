@@ -33,7 +33,7 @@
         </div>
       </activity>
 <!--      商品列表-->
-      <goods></goods>
+      <goods :layout-type="'3'"></goods>
     </div>
   </div>
 </template>

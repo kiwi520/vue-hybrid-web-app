@@ -2,7 +2,7 @@
   <div class="navigation-bar z-index-max" :style="navBarStyle" :class="{'bottom-line':pageName}">
     <div class="navigation-bar-left">
 <!--       默认状态-->
-      <img v-if="isShowBack" src="@img/back.svg" @click="goBack()" alt="">
+      <img v-if="isShowBack" src="@img/back.svg" @click="$emit('onLeftClick')" alt="">
 <!--      具名插槽-->
       <slot name="nav-left"></slot>
     </div>

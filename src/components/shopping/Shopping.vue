@@ -1,6 +1,6 @@
 <template>
   <div class="shopping">
-    <navigation-bar :page-name="'购物车'" :is-show-back="true"></navigation-bar>
+    <navigation-bar @onLeftClick="onLeftClick" :page-name="'购物车'" :is-show-back="true"></navigation-bar>
     <h1>shopping</h1>
   </div>
 </template>
@@ -12,6 +12,14 @@ export default {
   name: 'Shopping',
   components: {
     NavigationBar
+  },
+  methods: {
+    onLeftClick: function () {
+      console.log('onLeftClick')
+      console.log('onLeftClick')
+      console.log('onLeftClick')
+      this.$router.go(-1)
+    }
   }
 }
 </script>
